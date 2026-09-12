@@ -3,8 +3,8 @@
    ========================================================= */
 
 const BRAND_MARK_SVG = '<svg viewBox="0 0 48 48" fill="none" aria-hidden="true" focusable="false">' +
-  '<rect x="4" y="4" width="40" height="34" rx="12" fill="#0a0f0e"/>' +
-  '<path d="M10 36 L8 45 L19 36 Z" fill="#0a0f0e"/>' +
+  '<rect x="4" y="4" width="40" height="34" rx="12" fill="#14b8a6"/>' +
+  '<path d="M10 36 L8 45 L19 36 Z" fill="#14b8a6"/>' +
   '<path d="M32 4a12 12 0 0 1 12 12v3L29 5.3A11.9 11.9 0 0 1 32 4Z" fill="#2dd4bf"/>' +
   '<rect x="13.5" y="11" width="21" height="21" rx="4" fill="#fff"/>' +
   '<rect x="17.5" y="16" width="13" height="3" rx="1.5" fill="#14b8a6"/>' +
