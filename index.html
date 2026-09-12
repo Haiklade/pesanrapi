@@ -24,15 +24,15 @@
 </header>
 
 <section class="hero container">
-  <span class="eyebrow">Untuk UMKM Indonesia</span>
-  <h1>Pesanan WhatsApp lebih rapi. Usaha makin pasti.</h1>
-  <p class="subtitle">Catat pesanan, cek pembayaran, dan kirim tepat waktu dalam satu tempat.</p>
-  <div class="hero-ctas">
+  <span class="eyebrow" data-reveal>Untuk UMKM Indonesia</span>
+  <h1 data-reveal>Pesanan WhatsApp lebih rapi. Usaha makin pasti.</h1>
+  <p class="subtitle" data-reveal>Catat pesanan, cek pembayaran, dan kirim tepat waktu dalam satu tempat.</p>
+  <div class="hero-ctas" data-reveal>
     <a class="btn btn-primary" href="dashboard.html">Coba Gratis</a>
     <a class="btn btn-outline" href="#preview">Lihat Demo</a>
   </div>
 
-  <div class="hero-preview" id="preview">
+  <div class="hero-preview" id="preview" data-reveal>
     <div class="mock-topbar">
       <span class="mock-dot" style="background:#f87171;"></span>
       <span class="mock-dot" style="background:#fbbf24;"></span>
@@ -63,23 +63,23 @@
 
 <section class="section" id="masalah">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header" data-reveal>
       <span class="eyebrow">Masalah yang sering terjadi</span>
       <h2>Jualan online lewat chat, tapi bikin pusing</h2>
       <p>Tanpa sistem, chat WhatsApp yang menumpuk bisa bikin usaha kehilangan pesanan dan uang.</p>
     </div>
     <div class="problem-grid">
-      <div class="problem-card">
+      <div class="problem-card" data-reveal>
         <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M21 11.5a8.4 8.4 0 0 1-11.7 7.7L4 20l1-4.8A8.4 8.4 0 1 1 21 11.5Z"/></svg></div>
         <h3>Chat tertumpuk</h3>
         <p>Pesanan baru bercampur dengan chat lama, susah dicari saat mau diproses.</p>
       </div>
-      <div class="problem-card">
+      <div class="problem-card" data-reveal>
         <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8.5"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5V12l3 2"/></svg></div>
         <h3>Pesanan lupa diproses</h3>
         <p>Tanpa catatan, ada pesanan yang terlewat atau baru diingat setelah pelanggan menagih.</p>
       </div>
-      <div class="problem-card">
+      <div class="problem-card" data-reveal>
         <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6.5" width="18" height="11" rx="1.6"/><circle cx="12" cy="12" r="2.4"/></svg></div>
         <h3>Pembayaran belum tercatat</h3>
         <p>Susah membedakan mana pesanan yang sudah bayar dan mana yang masih ditagih.</p>
@@ -90,31 +90,78 @@
 
 <section class="section" id="manfaat" style="background:var(--surface); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header" data-reveal>
       <span class="eyebrow">Manfaat PesanRapi</span>
       <h2>Semua kebutuhan operasional dalam satu tempat</h2>
-      <p>Fokus pada aksi yang penting: pesanan mana yang harus diproses dan dikirim hari ini.</p>
+      <p>Fokus pada aksi yang penting: pesanan mana yang harus diproses dan dikirim hari ini. Klik salah satu untuk lihat contohnya.</p>
     </div>
-    <div class="feature-grid">
-      <div class="feature-card">
-        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M6 4h9l3 3v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 9h6M9 13h6M9 17h4"/></svg></div>
-        <h3>Catat pesanan rapi</h3>
-        <p>Semua pesanan WhatsApp tersimpan lengkap dengan produk, total, dan tanggal.</p>
+
+    <div class="feature-tabs" data-reveal>
+      <div class="feature-tab-list" role="tablist" aria-label="Manfaat PesanRapi">
+        <button type="button" class="feature-tab active" data-tab="0" role="tab" aria-selected="true">
+          <span class="feature-tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M6 4h9l3 3v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 9h6M9 13h6M9 17h4"/></svg></span>
+          <span>
+            <strong>Catat pesanan rapi</strong>
+            <span class="feature-tab-desc">Semua pesanan WhatsApp tersimpan lengkap dengan produk, total, dan tanggal.</span>
+          </span>
+        </button>
+        <button type="button" class="feature-tab" data-tab="1" role="tab" aria-selected="false">
+          <span class="feature-tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8.5"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5V12l3 2"/></svg></span>
+          <span>
+            <strong>Cek pembayaran sekali lihat</strong>
+            <span class="feature-tab-desc">Status "Belum Bayar" langsung terlihat, tidak ada lagi pesanan yang lupa ditagih.</span>
+          </span>
+        </button>
+        <button type="button" class="feature-tab" data-tab="2" role="tab" aria-selected="false">
+          <span class="feature-tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7h11v9H3zM14 11h4l3 3v2h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17.5" cy="18" r="1.6"/></svg></span>
+          <span>
+            <strong>Tandai siap kirim</strong>
+            <span class="feature-tab-desc">Pesanan yang siap dikirim langsung terlihat jelas, tidak tercampur pesanan lain.</span>
+          </span>
+        </button>
+        <button type="button" class="feature-tab" data-tab="3" role="tab" aria-selected="false">
+          <span class="feature-tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="8" r="3.2"/><path stroke-linecap="round" stroke-linejoin="round" d="M3.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5"/></svg></span>
+          <span>
+            <strong>Kelola pelanggan & WA</strong>
+            <span class="feature-tab-desc">Lihat pelanggan loyal dan hubungi langsung lewat WhatsApp dengan satu tombol.</span>
+          </span>
+        </button>
       </div>
-      <div class="feature-card">
-        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8.5"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5V12l3 2"/></svg></div>
-        <h3>Cek pembayaran sekali lihat</h3>
-        <p>Status "Belum Bayar" langsung terlihat, tidak ada lagi pesanan yang lupa ditagih.</p>
-      </div>
-      <div class="feature-card">
-        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7h11v9H3zM14 11h4l3 3v2h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17.5" cy="18" r="1.6"/></svg></div>
-        <h3>Tandai siap kirim</h3>
-        <p>Pesanan yang siap dikirim langsung terlihat jelas, tidak tercampur pesanan lain.</p>
-      </div>
-      <div class="feature-card">
-        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="8" r="3.2"/><path stroke-linecap="round" stroke-linejoin="round" d="M3.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5"/></svg></div>
-        <h3>Kelola pelanggan & WA</h3>
-        <p>Lihat pelanggan loyal dan hubungi langsung lewat WhatsApp dengan satu tombol.</p>
+
+      <div class="feature-tab-panel-wrap">
+        <div class="feature-tab-visual active" data-panel="0">
+          <div class="mini-card">
+            <div class="mini-card-row"><div><b>PR-0022</b><div class="mini-sub">Siti Amelia</div></div><span class="badge badge-baru">Baru</span></div>
+            <div class="mini-card-row"><div><b>PR-0021</b><div class="mini-sub">Fitriani Lubis</div></div><span class="badge badge-process">Diproses</span></div>
+            <div class="mini-card-row"><div><b>PR-0019</b><div class="mini-sub">Maya Puspitasari</div></div><span class="badge badge-done">Selesai</span></div>
+          </div>
+        </div>
+        <div class="feature-tab-visual" data-panel="1">
+          <div class="mini-card">
+            <div class="mini-card-row"><div><b>PR-0017</b><div class="mini-sub">Siti Amelia · Rp425.000</div></div><span class="badge badge-unpaid">Belum Bayar</span></div>
+            <div class="mini-card-row"><div><b>PR-0010</b><div class="mini-sub">Budi Santoso · Rp275.000</div></div><span class="badge badge-unpaid">Belum Bayar</span></div>
+            <div class="mini-card-row"><div><b>PR-0024</b><div class="mini-sub">Rina Wulandari · Rp500.000</div></div><span class="badge badge-process">Diproses</span></div>
+          </div>
+        </div>
+        <div class="feature-tab-visual" data-panel="2">
+          <div class="mini-card">
+            <div class="mini-card-row"><div><b>PR-0012</b><div class="mini-sub">Dedi Kurniawan</div></div><span class="badge badge-ready">Siap Dikirim</span></div>
+            <div class="mini-card-row"><div><b>PR-0008</b><div class="mini-sub">Fitriani Lubis</div></div><span class="badge badge-ready">Siap Dikirim</span></div>
+            <div class="mini-card-row"><div><b>PR-0005</b><div class="mini-sub">Rizky Ramadhan</div></div><span class="badge badge-ready">Siap Dikirim</span></div>
+          </div>
+        </div>
+        <div class="feature-tab-visual" data-panel="3">
+          <div class="mini-card">
+            <div class="mini-card-row" style="align-items:center;">
+              <div style="display:flex; gap:10px; align-items:center;">
+                <div class="customer-avatar" style="width:36px; height:36px; font-size:13px;">SA</div>
+                <div><b>Siti Amelia</b><div class="mini-sub">4 pesanan · Rp1.045.000</div></div>
+              </div>
+              <span class="badge badge-loyal">Pelanggan Loyal</span>
+            </div>
+            <button class="btn btn-outline btn-sm btn-block" type="button" tabindex="-1">Chat WhatsApp</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -122,13 +169,13 @@
 
 <section class="section" id="testimoni">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header" data-reveal>
       <span class="eyebrow">Kata pemilik usaha</span>
       <h2>Dipercaya pelaku UMKM rumahan</h2>
       <p>Testimoni berikut adalah contoh ilustrasi, bukan ulasan pengguna sungguhan.</p>
     </div>
     <div class="testimonial-grid">
-      <div class="testimonial-card">
+      <div class="testimonial-card" data-reveal>
         <span class="example-tag">Contoh testimoni</span>
         <p class="quote">"Sekarang pesanan yang belum bayar kelihatan jelas, jadi jarang ada yang kelupaan ditagih."</p>
         <div class="testimonial-person">
@@ -139,7 +186,7 @@
           </div>
         </div>
       </div>
-      <div class="testimonial-card">
+      <div class="testimonial-card" data-reveal>
         <span class="example-tag">Contoh testimoni</span>
         <p class="quote">"Chat WhatsApp jadi rapi karena semua pesanan sudah ada di PesanRapi, bukan cuma di chat."</p>
         <div class="testimonial-person">
@@ -150,7 +197,7 @@
           </div>
         </div>
       </div>
-      <div class="testimonial-card">
+      <div class="testimonial-card" data-reveal>
         <span class="example-tag">Contoh testimoni</span>
         <p class="quote">"Pesanan siap kirim gampang dipantau, jadi barang tidak pernah telat sampai ke pembeli."</p>
         <div class="testimonial-person">
@@ -167,7 +214,7 @@
 
 <section class="section">
   <div class="container">
-    <div class="final-cta">
+    <div class="final-cta" data-reveal>
       <h2>Siap merapikan pesanan WhatsApp-mu?</h2>
       <p>Coba PesanRapi gratis dengan data contoh — tidak perlu daftar, tidak perlu kartu kredit.</p>
       <a class="btn btn-cta" href="dashboard.html">Coba Gratis Sekarang</a>
@@ -211,5 +258,6 @@
   </div>
 </footer>
 
+<script src="assets/js/landing.js"></script>
 </body>
 </html>
