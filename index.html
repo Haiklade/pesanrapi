@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PesanRapi — Kelola Pesanan WhatsApp UMKM</title>
 <meta name="description" content="PesanRapi membantu UMKM mencatat pesanan WhatsApp, memantau pembayaran, dan mengirim tepat waktu — semua dalam satu tempat.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230d9488'/%3E%3Ctext x='16' y='22' font-size='15' font-weight='700' text-anchor='middle' fill='white' font-family='Arial'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect x='4' y='4' width='40' height='34' rx='12' fill='%230a0f0e'/%3E%3Cpath d='M10 36 L8 45 L19 36 Z' fill='%230a0f0e'/%3E%3Cpath d='M32 4a12 12 0 0 1 12 12v3L29 5.3A11.9 11.9 0 0 1 32 4Z' fill='%232dd4bf'/%3E%3Crect x='13.5' y='11' width='21' height='21' rx='4' fill='white'/%3E%3Crect x='17.5' y='16' width='13' height='3' rx='1.5' fill='%2314b8a6'/%3E%3Crect x='17.5' y='21.5' width='13' height='3' rx='1.5' fill='%2314b8a6'/%3E%3Crect x='17.5' y='27' width='5.5' height='3' rx='1.5' fill='%2314b8a6'/%3E%3Cpath d='M25.5 28.2l1.8 1.8 3.6-3.9' stroke='%2314b8a6' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 
 <header class="landing-header">
   <div class="landing-header-inner">
-    <a href="index.html" class="brand"><span class="brand-mark">PR</span>PesanRapi</a>
+    <a href="index.html" class="brand"><span class="brand-mark"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true" focusable="false"><rect x="4" y="4" width="40" height="34" rx="12" fill="#0a0f0e"/><path d="M10 36 L8 45 L19 36 Z" fill="#0a0f0e"/><path d="M32 4a12 12 0 0 1 12 12v3L29 5.3A11.9 11.9 0 0 1 32 4Z" fill="#2dd4bf"/><rect x="13.5" y="11" width="21" height="21" rx="4" fill="#fff"/><rect x="17.5" y="16" width="13" height="3" rx="1.5" fill="#14b8a6"/><rect x="17.5" y="21.5" width="13" height="3" rx="1.5" fill="#14b8a6"/><rect x="17.5" y="27" width="5.5" height="3" rx="1.5" fill="#14b8a6"/><path d="M25.5 28.2l1.8 1.8 3.6-3.9" stroke="#14b8a6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>PesanRapi</a>
     <div class="landing-header-actions">
       <a class="btn btn-ghost btn-sm" href="dashboard.html">Masuk ke Demo</a>
       <a class="btn btn-primary btn-sm" href="dashboard.html">Coba Gratis</a>
@@ -25,14 +25,14 @@
 
 <section class="hero container">
   <span class="eyebrow" data-reveal>Untuk UMKM Indonesia</span>
-  <h1 data-reveal>Pesanan WhatsApp lebih rapi. Usaha makin pasti.</h1>
+  <h1 data-reveal>Pesanan WhatsApp, akhirnya <span class="text-gradient-accent">rapi</span>.</h1>
   <p class="subtitle" data-reveal>Catat pesanan, cek pembayaran, dan kirim tepat waktu dalam satu tempat.</p>
   <div class="hero-ctas" data-reveal>
     <a class="btn btn-primary" href="dashboard.html">Coba Gratis</a>
-    <a class="btn btn-outline" href="#preview">Lihat Demo</a>
+    <a class="btn btn-glass" href="#preview">Lihat Demo</a>
   </div>
 
-  <div class="hero-preview" id="preview" data-reveal>
+  <div class="hero-preview reveal-scale" id="preview" data-reveal>
     <div class="mock-topbar">
       <span class="mock-dot" style="background:#f87171;"></span>
       <span class="mock-dot" style="background:#fbbf24;"></span>
@@ -88,7 +88,7 @@
   </div>
 </section>
 
-<section class="section" id="manfaat" style="background:var(--surface); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+<section class="section section-dark" id="manfaat">
   <div class="container">
     <div class="section-header" data-reveal>
       <span class="eyebrow">Manfaat PesanRapi</span>
@@ -222,10 +222,11 @@
   </div>
 </section>
 
-<footer class="container">
+<footer class="footer-dark">
+ <div class="container">
   <div class="footer-grid">
     <div class="footer-brand">
-      <a href="index.html" class="brand"><span class="brand-mark">PR</span>PesanRapi</a>
+      <a href="index.html" class="brand"><span class="brand-mark"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true" focusable="false"><rect x="4" y="4" width="40" height="34" rx="12" fill="#0a0f0e"/><path d="M10 36 L8 45 L19 36 Z" fill="#0a0f0e"/><path d="M32 4a12 12 0 0 1 12 12v3L29 5.3A11.9 11.9 0 0 1 32 4Z" fill="#2dd4bf"/><rect x="13.5" y="11" width="21" height="21" rx="4" fill="#fff"/><rect x="17.5" y="16" width="13" height="3" rx="1.5" fill="#14b8a6"/><rect x="17.5" y="21.5" width="13" height="3" rx="1.5" fill="#14b8a6"/><rect x="17.5" y="27" width="5.5" height="3" rx="1.5" fill="#14b8a6"/><path d="M25.5 28.2l1.8 1.8 3.6-3.9" stroke="#14b8a6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>PesanRapi</a>
       <p>Bantu UMKM Indonesia merapikan pesanan WhatsApp — pesanan, pembayaran, dan pengiriman dalam satu tempat.</p>
     </div>
     <div class="footer-col">
@@ -256,6 +257,7 @@
   <div class="landing-footer">
     <p>© 2026 PesanRapi. Demo produk — data tersimpan lokal di browser kamu.</p>
   </div>
+ </div>
 </footer>
 
 <script src="assets/js/landing.js"></script>

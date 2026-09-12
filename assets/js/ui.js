@@ -2,6 +2,17 @@
    PesanRapi — Shared UI helpers (icons, nav, modal, toast)
    ========================================================= */
 
+const BRAND_MARK_SVG = '<svg viewBox="0 0 48 48" fill="none" aria-hidden="true" focusable="false">' +
+  '<rect x="4" y="4" width="40" height="34" rx="12" fill="#0a0f0e"/>' +
+  '<path d="M10 36 L8 45 L19 36 Z" fill="#0a0f0e"/>' +
+  '<path d="M32 4a12 12 0 0 1 12 12v3L29 5.3A11.9 11.9 0 0 1 32 4Z" fill="#2dd4bf"/>' +
+  '<rect x="13.5" y="11" width="21" height="21" rx="4" fill="#fff"/>' +
+  '<rect x="17.5" y="16" width="13" height="3" rx="1.5" fill="#14b8a6"/>' +
+  '<rect x="17.5" y="21.5" width="13" height="3" rx="1.5" fill="#14b8a6"/>' +
+  '<rect x="17.5" y="27" width="5.5" height="3" rx="1.5" fill="#14b8a6"/>' +
+  '<path d="M25.5 28.2l1.8 1.8 3.6-3.9" stroke="#14b8a6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>' +
+  '</svg>';
+
 const ICONS = {
   home: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 11.5 12 4l9 7.5"/><path stroke-linecap="round" stroke-linejoin="round" d="M5 10v9a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1v-9"/></svg>',
   orders: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M6 4h9l3 3v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 9h6M9 13h6M9 17h4"/></svg>',
@@ -85,7 +96,7 @@ function renderAppShell(activePage) {
   headerMount.outerHTML = `
     <header class="app-header">
       <div class="app-header-inner">
-        <a href="dashboard.html" class="brand"><span class="brand-mark">PR</span>PesanRapi</a>
+        <a href="dashboard.html" class="brand"><span class="brand-mark">${BRAND_MARK_SVG}</span>PesanRapi</a>
         <nav class="desktop-nav" aria-label="Navigasi utama">
           ${NAV_ITEMS.map((n) => `<a href="${n.href}" data-nav="${n.page}">${n.label}</a>`).join("")}
         </nav>
