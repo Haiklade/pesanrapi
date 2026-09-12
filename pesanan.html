@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pesanan — PesanRapi</title>
+<meta name="description" content="Kelola semua pesanan WhatsApp: filter status, cari pesanan, tambah dan ubah status dengan cepat.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230d9488'/%3E%3Ctext x='16' y='22' font-size='15' font-weight='700' text-anchor='middle' fill='white' font-family='Arial'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="pesanan" class="app-body">
+
+<div id="app-header"></div>
+
+<main class="container" style="padding-top:20px">
+
+  <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:18px;">
+    <h1 style="font-size:21px;">Pesanan</h1>
+    <button class="btn btn-primary btn-sm" id="open-add-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;"><path stroke-linecap="round" d="M12 5v14M5 12h14"/></svg>
+      Tambah
+    </button>
+  </div>
+
+  <div class="filter-bar">
+    <div class="search-input-wrap">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.5" cy="10.5" r="6.5"/><path stroke-linecap="round" d="m20 20-4.3-4.3"/></svg>
+      <input type="search" id="search-input" placeholder="Cari nama pelanggan atau nomor pesanan...">
+    </div>
+    <div class="tab-scroll" id="status-tabs" role="tablist" aria-label="Filter status pesanan"></div>
+  </div>
+
+  <div class="order-head-row">
+    <span>No.</span><span>Pelanggan</span><span>Produk</span><span>Total</span><span>Tanggal</span><span>Status</span><span></span>
+  </div>
+  <div class="order-list" id="order-list"></div>
+
+</main>
+
+<div id="app-bottomnav"></div>
+
+<!-- Modal Tambah/Edit Pesanan -->
+<div class="modal-overlay" id="order-modal">
+  <div class="modal-panel">
+    <div class="modal-header">
+      <h3 id="modal-title">Tambah Pesanan</h3>
+      <button class="icon-btn" data-close-modal="order-modal" aria-label="Tutup"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <form id="order-form">
+      <input type="hidden" id="f-order-id">
+
+      <div class="form-grid-2">
+        <div class="form-row">
+          <label for="f-customer-name">Nama Pelanggan</label>
+          <input type="text" id="f-customer-name" required placeholder="Contoh: Siti Amelia">
+        </div>
+        <div class="form-row">
+          <label for="f-customer-phone">No. WhatsApp</label>
+          <input type="tel" id="f-customer-phone" required placeholder="0812xxxxxxx">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label>Produk / Item Pesanan</label>
+        <div id="item-rows"></div>
+        <button type="button" class="btn btn-outline btn-sm" id="add-item-btn">+ Tambah Item</button>
+        <p class="form-hint">Isi nama produk, jumlah, dan harga satuan. Total dihitung otomatis.</p>
+      </div>
+
+      <div class="form-grid-2">
+        <div class="form-row">
+          <label for="f-date">Tanggal Pesanan</label>
+          <input type="date" id="f-date" required>
+        </div>
+        <div class="form-row">
+          <label for="f-status">Status</label>
+          <select id="f-status">
+            <option value="Baru">Baru</option>
+            <option value="Belum Bayar">Belum Bayar</option>
+            <option value="Diproses">Diproses</option>
+            <option value="Siap Dikirim">Siap Dikirim</option>
+            <option value="Selesai">Selesai</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label>Total Pesanan</label>
+        <input type="text" id="f-total-display" disabled value="Rp0">
+      </div>
+
+      <div class="modal-actions">
+        <button type="button" class="btn btn-outline" data-close-modal="order-modal">Batal</button>
+        <button type="submit" class="btn btn-primary">Simpan Pesanan</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/ui.js"></script>
+<script src="assets/js/pesanan.js"></script>
+</body>
+</html>

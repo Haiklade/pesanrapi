@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pelanggan — PesanRapi</title>
+<meta name="description" content="Daftar pelanggan, riwayat belanja, dan pelanggan loyal — siap dihubungi lewat WhatsApp.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230d9488'/%3E%3Ctext x='16' y='22' font-size='15' font-weight='700' text-anchor='middle' fill='white' font-family='Arial'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="pelanggan" class="app-body">
+
+<div id="app-header"></div>
+
+<main class="container" style="padding-top:20px">
+
+  <h1 style="font-size:21px; margin-bottom:18px;">Pelanggan</h1>
+
+  <div class="filter-bar">
+    <div class="search-input-wrap">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.5" cy="10.5" r="6.5"/><path stroke-linecap="round" d="m20 20-4.3-4.3"/></svg>
+      <input type="search" id="search-input" placeholder="Cari nama atau nomor WhatsApp...">
+    </div>
+    <div class="tab-scroll" id="customer-tabs" role="tablist" aria-label="Filter pelanggan"></div>
+  </div>
+
+  <div class="customer-grid" id="customer-list"></div>
+
+</main>
+
+<div id="app-bottomnav"></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/ui.js"></script>
+<script src="assets/js/pelanggan.js"></script>
+</body>
+</html>
